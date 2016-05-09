@@ -16,9 +16,10 @@ chmod +x /usr/local/bin/pull_database.sh
 
 ## Usage
 
-1. Make sure you have SSH access to the different servers.
-2. Make sure that you've created Drush aliases for the different environments.
-3. Run `pull_database.sh <source> <target> <reroute_email_address>` where:
+1. `cd` to the Drupal root directory.
+2. Make sure you have SSH access to the different servers.
+3. Make sure that you've created Drush aliases for the different environments.
+4. Run `pull_database.sh <source> <target> <reroute_email_address>` where:
   - *Source* is the Drush alias for the source environment, e.g. production
   - *Target* is the Drush alias for the target environment, e.g. default
   - *Reroute email address* is an optional address that you wish to use for Reroute email
