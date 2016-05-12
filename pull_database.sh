@@ -45,7 +45,7 @@ if [ "$target" = "development" ]; then
 
   # Set the reroute email address if specified.
   if [ "$reroute_email_addess" ]; then
-    drush vset reroute_email_address 'olof.johansson@oddhill.se'
+    drush vset reroute_email_address $reroute_email_addess
   fi
 fi
 
@@ -63,6 +63,6 @@ if [ "$target" = "staging" ]; then
 
   # Set the reroute email address if specified.
   if [ "$reroute_email_addess" ]; then
-    drush @staging vset reroute_email_address 'olof.johansson@oddhill.se'
+    drush @staging vset reroute_email_address $reroute_email_addess
   fi
 fi
